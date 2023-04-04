@@ -17,14 +17,14 @@ Killercoda Platform : [https://killercoda.com/rkalluru](https://killercoda.com/r
 uname
 ```
 
-- **uname -a , uname —all :** it is a command is used to ****display the complete output**.**
+*  **uname -a , uname —all :** it is a command is used to ****display the complete output**.**
 
 ```bash
 uname -a
 uname --all
 ```
 
-- Lets say you joined in a an organisation and open the machine you will checkout what is this machine by using using we are using the command ****cat /etc/*release****
+* Lets say you joined in a an organisation and open the machine you will checkout what is this machine by using using we are using the command ****cat /etc/*release****
 - it will be shown the complete information about your os.
 - To check the vendor operating system in your organisation.
 
@@ -106,19 +106,19 @@ mv <source file name> <destination file name>
 
 ### Theoretical Points
 
-### Practical things the trainer did
+### imp commands
 
-- uname - This command is used to display the which os you are using.
-- uname -a , uname -all - This command is use to display complete information about the os.
-- cat /etc/*release - This command shown the vendor os.
-- cat /proc/cpuinf - This command is used to display the cpu information.
-- cat /proc/meminfo - This command is used to display the memory information
-- lsblk - This command is used to check the disk information.
-- uname -i - This command is used to shown bits of os (32bit or 64bit).
-- ls - list of all files and dirctories.
-- ls -A - To list of all hidden files.
+- uname : This command is used to display the which os you are using.
+- uname -a , uname -all : This command is use to display complete information about the os.
+- cat /etc/*release : This command shown the vendor os.
+- cat /proc/cpuinf : This command is used to display the cpu information.
+- cat /proc/meminfo : This command is used to display the memory information
+- lsblk : This command is used to check the disk information.
+- uname -i : This command is used to shown bits of os (32bit or 64bit).
+- ls : list of all files and dirctories.
+- ls -A : To list of all hidden files.
 - touch - to create an empty file
-- cat > <file name> - To create a files with content.
-- rm -f  <file name> - To remove the files
-- cp <source file> <destination file> - To copy the files one file to another.
-- mv <source file> <destination file> - To move the files one file to another file (its overwrite the previous file).
+- cat > <file name> : To create a files with content.
+- rm -f  <file name> : To remove the files
+- cp <source file> <destination file> : To copy the files one file to another.
+- mv <source file> <destination file> : To move the files one file to another file (its overwrite the previous file).
