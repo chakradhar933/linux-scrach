@@ -65,3 +65,4 @@ echo sam.txt | xargs rm -f
 4. Service management
 5. Permission management
 6. network management.
+

@@ -163,6 +163,227 @@ unzip shipping.zip
 ```bash
 cat /etc/passwd | grep root
 ```
+### Linux adminstration topics
+# Process management
+- ps : list of process which are running on the system .
+```bash
+ps
+```
+- ps -u :If you want to see the all the process by using command.
+```bash
+ps -u
+```
+- ps -e :If i don't want all the process which are running  i want only related to my user and my session i want whole process which are running in my system .
+```bash
+ps -e
+```
+- “e” stand for all
+- ps -ef : To shown the information with length.
+```bash
+ps -ef
+```
+- sleep :  stop means we can resume back after completed the time.
+```bash
+sleep <timer>
+sleep 5
+```
+- sleep 100 : To give the fast output by using the command.
+```bash
+sleep 100 &
+```
+- ps -ef : To backround check the process.
+```bash
+ps -ef | grep sleep
+```
+- kill : To end the task in linux completly by using the command **kill.**
+- Syntax kill <pid>
+```bash
+kill <process id>
+kill 920
+```
+```bash
+kill -9 <pid>
+kill -9 1542
+```
+## **User Management:**
+- useradd : To create the user .
+```bash
+useradd <name>
+useradd john
+```
+- id  : To check the user is created or not .
+```bash
+id <username>
+id john
+```
+- Every user can be associate with a numbers.
+- passwd : To create the password to the user.
+```bash
+passwd <username>
+passwd john
+``` 
+- The following command will run some services inside the system and you can check those process are ran by a certain user but not by a root user.
+```bash
+curl -s https://raw.githubusercontent.com/devopstrainings/linux-basics-katakoda/master/linux-adminstration/files/daemon-services.sh | bash
+```
+- You can check the process of some system services runs as a normal user but not as a root user.
+```bash
+ps -ef | grep httpd
+```
+```bash
+ps -ef | grep tomcat
+```
+```bash
+ps -ef | grep mysql
+```
+- su : To switch the one user to another user .
+```bash
+su - <username>
+su - john
+```
+
+- userdel : To delete the user by using 
+```bash
+userdel <user name>
+userdel john
+```
+- groupadd : we can also add group first and then add the user as well.
+```
+groupadd admins
+useradd -g admins steve
+id steve
+```
+## **Package Management:**
+- yum list : If you want to list out the packages which are installed in the system.
+```bash
+sudo yum list installed
+```
+- If you want to know packages are available to installed by using the command.
+```bash
+sudo yum list available 
+```
+- yum list all : If you know the both installed and available packages.
+```bash
+sudo yum list all
+```
+- To list of all the packages by using number word count is going to be used.
+```bash
+sudo yum list | wc -l
+```
+- installed packages are donated as **@ sysmbol**
+- To the find the packages with name whether it is installed or not
+```bash
+sudo yum list | grep nginx
+sudo yum list | grep unzip
+sudo yum list | grep vim
+```
+- Other way to check the packages are installed by using.
+```bash
+sudo yum list installed | grep vim
+```
+- yum install : Install the new packages by using
+```bash
+sudo yum installed <package name> 
+sudo yum install nginx -y
+```
+- yum update : To update the package .
+```bash
+sudo yum update <package name> -y
+sudo yum update nginx -y
+```
+- To update the complete system
+
+```bash
+sudo yum update -y
+```
+- yum remove : To remove the package.
+```bash
+sudo yum remove nginx -y
+```
+- rpm -ql : Asking for installed locations for nginx.
+```bash
+rpm -ql ngnix
+```
+### System Management:
+- To list of all services which are running on the os by using the command
+```bash
+sudo systemctl list-units -t service
+```
+- press q come out from the list
+- systemctl status : To check the status of the nginx single service.
+```bash
+sudo systemctl status nginx
+```
+- To start the service
+```bash
+sudo systemctl start nginx
+```
+- To stop the service
+```bash
+sudo systemctl stop nginx
+```
+- To enable the service
+```bash
+sudo systemctl enable ngnix
+```
+- To disable the service
+```bash
+sudo systemctl disable nginx
+```
+
+## permission Management:
+
+In the echo system of Linux OS, Files properties management are categorized in two.
+
+1. File Ownerships
+2. File Permissions
+
+When a file created inside a system, that file has to be associated to a `user` which is **Owner** and also a `group` which is **Group Owner**.
+
+When we create a file the ownerships to that file is getting the information from the user whom created that file.
+
+You can check the ownerships of a file using `ls -l` command.
+
+`touch sample.txt | ls -l sample.txt`
+
+When we want to change the ownership we use `chown` command. When we want to change the group ownership then we use `chgrp` command. To change ownership:
+
+`chown centos sample.txt ls -l sample.txt`
+
+To change group ownership:
+
+`groupadd devops chgrp devops sample.txt ls -l sample.txt`
+
+In above situation you are dealing with a file, If that is a directory then use `-R` option along with both the commands.
+
+One more thing from the above situation is we are using two commands to change the owner and group, Where as we can do that with one single command.
+
+`chown centos:devops sample.txt ls -l sample.txt chown root:root sample.txt ls -l sample.txt`
+
+Permissions of a file telling that which owner can do what.
+
+The operations performed on the file are
+
+1. read (`r` )
+2. write (`w` )
+3. execute (`x` )
+
+Owners of a file are three
+
+1. File Owner (`u` )
+2. Group Owner (`g` )
+3. Others as Owners. (`o` )
+
+
+```bash
+sudo chmod ugo-rwx sample.txt
+```
+
+```bash
+sudo chmod u+r sample.txt
+```
+
+
 
 
 
