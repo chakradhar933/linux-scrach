@@ -57,6 +57,79 @@ cp f2 f1
 ```bash
 mv f1 f2
 ```
+- pwd : We want to know about which place or location we are present in .
+```bash
+pwd
+```
+
+- cd : To navigate one location to another location. 
+```bash
+cd
+```
+- cd .. :To go back to the one location.
+```bash
+cd ..
+```
+- cd ../.. : To go back mulitiple locations
+```bash
+cd ../..
+```
+- mkdir <name>: To create a diretory or folder.
+```bash
+mkdir <linux>
+```
+- cp -r <soucrce dir name> <destination dir name> : To copy the one directory to another directory .
+```bash
+cp -r l1 l2
+```
+
+- mv <source file name> < destination directory name> : To move the file to the directory.
+```bash
+mv f1 l1
+```
+
+- To move the one directory to another directory
+
+```bash
+mv f2 f1
+```
+- rm -r : To remove the directory.
+```bash
+rm -r f1 f2
+```
+- rm -rf  : To remove the directory forcefully
+```bash
+rm -rf <dir name>
+```
+- head : In a file having more numbers of lines to shown only 1st 5 lines
+```bash
+head -n 5 <filename>
+```
+- tail :If you want to have only last 5 lines.
+```bash
+tail -n 5 <filename>
+```
+-grep : The grep filter searches a file for a particular pattern of charcters, and display all lines that contain that platform
+```bash
+grep <word> <file name>
+grep root /etc/passwd
+```
+
+-awk : In such cases the content needs to be filtered based on the columns in that awk command is used.
+```bash
+awk -F : '{print $column-number}' <file name>
+awk -F : '{print $1 $2}' /etc/passwd
+```
+- and also cama seperated files
+```bash
+awk -F , '{print $cama-number}' <file name>
+awk -F , '{print $1}' /etc/passwd
+```
+- vim  : editer is used to create a file and modify the files.
+`vim file` -> Press `Insert` or `i` -> Make Changes -> Press `ESC` -> Press Colon `:` -> Press `wq` -> Done
+```bash
+vim <file name>
+```
 
 
 
