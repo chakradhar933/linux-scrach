@@ -377,5 +377,71 @@ sudo chmod ugo-rwx sample.txt
 ```bash
 sudo chmod u+r sample.txt
 ```
+### Network management 
+- Firewall is a device that can help you to blocking the unwanted traffic is called **firewall** .
+    - how to shown the open ports to the server by using command.
+```bash
+sudo netstat -l
+sudo netstat -lt
+sudo netstat -ltp
+sudo netstat -ltpn
+```
+
+- above command commands L - stands from shown all open ports
+- T - network tcp ports.
+- P - which process can open.
+- n - stands from the numbers.
+
+How to get the ip address in command line
+
+```bash
+ip a
+```
+
+## 
 
 ### Theoretical Points
+
+Before going to start the project we will create one security group.
+
+## security groups
+
+- click on create security group then
+- Name = allow-all
+- description = allow-all
+- inbound rules = add the inbound rule set all traffic source = anyware
+- click on create security group created successfully.
+1. In this video we are create the one ec2 instance and add the security group and then install nginx.
+2. in server we will install nginx server
+3.  Ec2 instance - ami =devops-practice - centos8, instance= t2 mirco, sg= allow-all,keypair=without keypair,start ec2 instance 
+
+```bash
+sudo yum install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+```
+
+### Practical things the trainer did
+
+- How to check the ip address of the machine by using the command
+
+```bash
+ip a
+```
+
+- Telnet - check whether it is port opened or not by using the command
+- 
+
+```bash
+telnet ipaddress portnumber
+telnet 172.2.3.2/6 80
+
+```
+
+- how to check your ip address?
+- By using browser search **[ifconfig.co](http://ifconfig.co)**
+- **command line**
+
+```bash
+curl ifconfig.co
+```

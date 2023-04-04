@@ -374,13 +374,39 @@ Owners of a file are three
 2. Group Owner (`g` )
 3. Others as Owners. (`o` )
 
-
 ```bash
 sudo chmod ugo-rwx sample.txt
 ```
-
 ```bash
 sudo chmod u+r sample.txt
+```
+### Network Management
+- netstat : how to shown the open ports to the server .
+```bash
+sudo netstat -l
+sudo netstat -lt
+sudo netstat -ltp
+sudo netstat -ltpn
+```
+- above command commands L - stands from shown all open ports
+- T - network tcp ports.
+- P - which process can open.
+- n - stands from the numbers.
+- How to get the ip address in command line
+
+```bash
+ip a
+```
+- Telnet : - check whether it is port opened or not.
+```bash
+telnet ipaddress portnumber
+telnet 172.2.3.2/6 80
+```
+- how to check your ip address?
+- By using browser search **[ifconfig.co](http://ifconfig.co)**
+- **command line**
+```bash
+curl ifconfig.co
 ```
 
 
