@@ -130,6 +130,40 @@ awk -F , '{print $1}' /etc/passwd
 ```bash
 vim <file name>
 ```
+- Find : Find command is used to search the files by using naming convention.
+- Syntax : find <which-location-find> <search-critria>
+```bash
+find / -name f1
+```
+- curl : command line browser curl is used.
+- Most of the time we need to browse urls to find that content from the command line CURL is used.
+- curl command is used to download the files from the browser.
+```bash
+curl google.com
+```
+```bash
+curl -O https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.0-RC1/bin/apache-tomcat-8.0.0-RC1-deployer.tar.gz
+```
+- unzip , tar :Extract the files from the **tar or zip .**
+- Many times in the linux world all the softwares are packaged either in .zip or .tar.g
+tar -xf tar -xf apache-tomcat-8.0.0-RC1-deployer.tar.gz
+unzip <filename>.zip
+- Syntax :tar -xf <filename>.tar.gz
+```bash
+tar -xf tar -xf apache-tomcat-8.0.0-RC1-deployer.tar.gz
+```
+- Syntax : unzip <file name>.zip
+```bash
+unzip curl -L -o shipping.zip https://github.com/roboshop-devops-project/shipping/archive/refs/heads/main.zip
+unzip shipping.zip
+```
+- Pipes : Pipes are used to send the output of one command to another command without storing the content anyware physically on disk.
+- syntax : com1 | com2
+- fil1 | file 2
+```bash
+cat /etc/passwd | grep root
+```
+
 
 
 
