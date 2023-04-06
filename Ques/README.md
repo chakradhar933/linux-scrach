@@ -22,13 +22,13 @@ ls -Al # to shown hidden files also
 # du -sh <file name> this will give both file and directory.
 du -sh dir name
 ```
-# 4. How can i see 10 1st and last 10 lines of the code in linux ?
+### 4. How can i see 10 1st and last 10 lines of the code in linux ?
 - ans : By using the command 
 ```bash
 head -n 10 <file name>
 tail -n 10 <file name>
 ```
-# 5 . If their is a file "f1" having 50 lines are their i just want to print the line number 10 content . how can i find in linux ?
+### 5 . If their is a file "f1" having 50 lines are their i just want to print the line number 10 content . how can i find in linux ?
 - ans : In this we are using the command
 ```bash
 sed -n 'linenumberp' <file name>
