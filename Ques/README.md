@@ -1,4 +1,4 @@
-- 1 . How to create a file in linux ?
+### 1 . How to create a file in linux ?
 - ans: They are multiple ways to create a file but iam using to ways i.e.,
 
 ```bash
