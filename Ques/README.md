@@ -34,4 +34,11 @@ tail -n 10 <file name>
 sed -n 'linenumberp' <file name>
 sed -n '5p' f2
 ```
-- 6. 
+ ### How to delete a file without using rm command in linux ?
+ - ans: To delete file without using rm command by using another command
+ ```bash
+ unlink <file path and file name>
+ unlink f1
+ ```
+ ### Find the files which you are modify before 15 days back ? how can i find ?
+ - Ans: 
