@@ -147,7 +147,7 @@ unzip /tmp/frontend.zip
 - Now take Public ip and search in google : 44.192.39.120
 - 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5346ff7a-ecb5-43d4-8447-471fa40bc47c/Untitled.png)
+- ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5346ff7a-ecb5-43d4-8447-471fa40bc47c/Untitled.png)
 
 - Now create nginx reverse proxy configuration.
 - now to store the all nginx configuration files at location
