@@ -112,7 +112,7 @@ systemctl start nginx
 - Now search in google ip address : 44.192.39.120
 - now shown default web page of nginx
 
-- ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/88f3e69a-9c44-4745-abeb-ccda06a06e72/Untitled.png)
+ - ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/88f3e69a-9c44-4745-abeb-ccda06a06e72/Untitled.png)
 
 - copy the path in the command line
 
